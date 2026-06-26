@@ -25,7 +25,7 @@ jobs:
             -v "$(pwd)":/work \
             -w /work \
             thumbsupgallery/thumbsup:latest \
-            --config config.json
+            thumbsup --config config.json
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./build_output
